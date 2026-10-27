@@ -21,9 +21,9 @@ Passwords and other secrets should be provided through environment variables or 
 
 ## Test Environment
 
-- Operating system: Windows
-- Docker version: Verify with `docker --version`
-- Docker Compose version: Verify with `docker compose version`
+- Operating system: Microsoft Windows 10.0.26300.9711
+- Docker version: 29.8.2
+- Docker Compose version: 5.6.0
 - Test date: 2026-10-27
 
 ## AI Assistant Usage
