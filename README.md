@@ -9,7 +9,6 @@ The application provides the following endpoints:
 - `/health` — checks whether the application is running.
 - `/greet?name=Ada` — returns a greeting.
 - `/visit` — increments and returns a visit counter stored in Redis.
-- `/whoami` — returns the application's container hostname.
 
 ## Requirements
 
@@ -34,11 +33,12 @@ docker compose ps
 
 ## Test the Endpoints
 
-```bash
+On Windows, run these commands in Command Prompt:
+
+```cmd
 curl.exe http://localhost:8000/health
 curl.exe "http://localhost:8000/greet?name=Ada"
 curl.exe http://localhost:8000/visit
-curl.exe http://localhost:8000/whoami
 ```
 
 ## Stop the Application
@@ -55,16 +55,11 @@ docker compose down -v
 
 ## Test Results
 
-Complete this section after running the application and verifying the results.
-
-## Test Results
-
 - Application status: Running
 - Redis health status: Healthy
 - `/health` response: `{"status":"ok"}`
 - `/greet` response: Tested successfully
 - `/visit` response: `{"storage":"redis","visits":2}`
-- `/whoami` response: Not tested
 - Persistence: Data survived app container removal and `docker compose down`; data was reset after `docker compose down -v`.
 - Tests: `5 passed`
-- Screenshot filename: `screenshot.png`
+- Screenshot: `screenshot.png`
