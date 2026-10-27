@@ -1,0 +1,6 @@
+*
+!app.py
+!requirements.txt
+!test_app.py
+!Dockerfile
+!.dockerignore
